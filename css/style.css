@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    transition: 1s;
+}
+header{
+    background: #f6f9f9;
+    padding: 25px 0;
+}
+.logo{
+	max-width: 20%;
+	flex-basis: 20%;
+}
+nav{
+	max-width: 80%;
+	flex-basis: 80%;
+}
+nav ul{
+
+justify-content: flex-end;
+}
+nav ul li a{
+    font-size: 16px;
+    color: #2d3950;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 15px;
+    display: block;
+}
+nav ul li a:hover{
+	color: #15a4fa;
+	transition: 0.5s;
+}
+.banner_section{
+    background: url(../images/banner.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner_section .row{
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.bannera_content{
+    text-align: center;
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.bannera_content h1{
+    font-size: 120px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.bannera_content span{
+    width: 100%;
+    height: 1px;
+    background: #2196F3;
+    display: block;
+    margin-bottom: 25px;
+}
+.bannera_content p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.bannera_content button {
+    font-size: 18px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #03A9F4;
+    padding: 15px 37px;
+    border-radius: 5px;
+}
+.arrow_down {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    right: 50%;
+    bottom: 2%;
+    transform: translate(10px, 10px);
+    animation-name: arrow-down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes arrow-down{
+    0%{
+        bottom: 2%;
+    }
+    50%{
+        bottom: -5%;
+    }
+    100%{
+        bottom: 2%;
+    }
+}
+.about_section{
+	    background: #f6f9f9;
+}
+.feature{
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+    text-align: center;
+    padding: 65px 30px;
+}
+.feature_icon{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background: rgb(72,186,255);
+    background: -moz-linear-gradient(left, rgba(72,186,255,1) 50%, rgba(95,195,255,1) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(72,186,255,1) 50%,rgba(95,195,255,1) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(72,186,255,1) 50%,rgba(95,195,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+}
+.feature_icon i{
+    font-size: 50px;
+    color: #fff;
+    line-height: 100px;
+    text-shadow: 2px 3px 5px #67606096;
+}
+.feature h3{
+    font-size: 22px;
+    color: #1d3950;
+    margin: 20px 0;
+}
+.feature p{
+    font-size: 15px;
+    color: #999999;
+}
+.heading {
+    text-align: center;
+    padding: 50px 0 70px;
+}
+.heading h2 {
+    font-size: 40px;
+    color: #2d3950;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.heading p {
+    font-size: 16px;
+}
+.showcase{
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+    padding: 15px;
+}
+.showcase_details{
+    position: relative;
+}
+.showcase_details .overlay{
+    height: 0;
+    width: 100%;
+    position: absolute;
+    background: #2196f3d1;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.4s;
+}
+.showcase_details:hover .overlay{
+	opacity: 1;
+	height: 100%;
+}
+.showcase_details .plus{
+    transform: translate(-20px, -40px);
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    width: 35px;
+    height: 35px;
+    display: block;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+.showcase_details:hover .plus{
+	opacity: 1;
+	top: 60%;
+}
+.showcase_details .link{
+    transform: translate(-55px, -40px);
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    width: 35px;
+    height: 35px;
+    display: block;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.6s;
+}
+.showcase_details:hover .link{
+	opacity: 1;
+	top: 60%;
+}
+.contact_section{
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    position: relative;
+    z-index: 0;
+}
+.contact_section .overlay{
+	background-color: #384153d9;
+	position: absolute;
+	width: 100%;
+	height:100%;
+	z-index: -1;
+}
+.contact_section .heading h2{
+    color: #fff;
+}
+.contact_section .row{
+	justify-content: center;
+}
+.contact_form{
+    max-width: 60%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contact_form form .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.contact_form textarea,
+.contact_form input{
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: #999;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.contact_form form ul{
+    align-items: center;
+}
+.contact_form form ul li{
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.contact_form form ul li input[type="checkbox"]{
+    width: auto;
+}
+.contact_form form ul li input[type="Submit"]{
+    justify-content: flex-end;
+}
+.contact_form form ul li label{
+    font-size: 15px;
+    color: #fff;
+    margin-left: 10px;
+}   
+.contact_form form ul li button {
+    font-size: 18px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #03A9F4;
+    padding: 15px 51px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+.footer_section{
+    padding: 30px 0;
+}
+.footer_section .row{
+	align-items: center;
+}
+.footer_section .copyright{
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.footer_section .copyright p{
+    font-size: 15px;
+    color: #999;
+}
+.footer_section .copyright p a{
+    color: #999;
+}
+
+.footer_section .social{
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.footer_section .social ul{
+	justify-content: flex-end;
+}
+.footer_section .social ul li a{
+    display: block;
+    height: 40px;
+    width: 40px;
+    background: #15a4fa;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.footer_section .social ul li a:hover{
+	background:  #fff;
+    color:#15a4fa;
+    transition: 0.5s;
+    border:1px solid #15a4fa;
+}
